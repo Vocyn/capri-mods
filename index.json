@@ -2,14 +2,6 @@
   "format": 1,
   "mods": [
     {
-      "folder": "Maid-suit",
-      "file": "maid-suit.capri-skin",
-      "name": "Maid Suit",
-      "kind": "skin",
-      "author": "Vocyn",
-      "about": "A skin for Capri: a maid suit, for you weirdos."
-    },
-    {
       "folder": "btd6-strategy",
       "file": "btd6-strategy.capri-skill",
       "name": "BTD6 strategy",
@@ -72,6 +64,14 @@
       "kind": "code",
       "author": "Vocyn",
       "about": "A tiny code mod to learn from. Say \"mod check\" and she answers and counts how many times you've asked."
+    },
+    {
+      "folder": "maid-suit",
+      "file": "maid-suit.capri-skin",
+      "name": "Maid Suit",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "A skin for Capri: a maid suit, for you weirdos."
     },
     {
       "folder": "sharper-ears",
