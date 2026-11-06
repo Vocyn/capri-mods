@@ -74,6 +74,14 @@
       "about": "Fair dice, coin flips, random numbers and picks."
     },
     {
+      "folder": "frutiger-aero",
+      "file": "frutiger-aero.capri-skin",
+      "name": "Frutiger Aero",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "Capri in the glossy mid-2000s look of Windows Vista and 7, all inside her own outline: water-glass blue hair full of rising bubbles, orange gel panels, gel-gloss shards, black-glass limbs and twinkling lens flares."
+    },
+    {
       "folder": "galaxy-hair-aurora",
       "file": "galaxy-hair-aurora.capri-skin",
       "name": "Galaxy Hair: Aurora",
@@ -96,6 +104,14 @@
       "kind": "skin",
       "author": "Issei",
       "about": "Her hair as a galaxy: deep space with violet and pink clouds."
+    },
+    {
+      "folder": "hair-down",
+      "file": "hair-down.capri-skin",
+      "name": "Hair Down",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "Capri with her hair let down: one sleek hot-pink sheet with a neon glow, falling down her back to a hooked point, with a thin strand in front of her face."
     },
     {
       "folder": "halo",
@@ -128,6 +144,14 @@
       "kind": "skin",
       "author": "Vocyn",
       "about": "A skin for Capri: a maid suit, for you weirdos."
+    },
+    {
+      "folder": "nicknames",
+      "file": "nicknames.capri-code",
+      "name": "Nicknames",
+      "kind": "code",
+      "author": "Vocyn",
+      "about": "Give Capri new names just by asking, out loud or in chat. She answers to them straight away and remembers them."
     },
     {
       "folder": "santa-hat-black",
