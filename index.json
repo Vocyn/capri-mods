@@ -2,6 +2,14 @@
   "format": 1,
   "mods": [
     {
+      "folder": "Maid-suit",
+      "file": "maid-suit.capri-skin",
+      "name": "Maid Suit",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "A maid outfit for Capri: pleated dress, ruffled apron, puffed sleeves, cuffs, bows and a frilled headpiece. Her hair and face stay the same."
+    },
+    {
       "folder": "colors-bubblegum",
       "file": "colors-bubblegum.capri-mod",
       "name": "Colors: Bubblegum",
@@ -42,6 +50,22 @@
       "about": "Capri answers to more names: Nova, Big Z and Capricorn. She still answers to Capri too."
     },
     {
+      "folder": "frutiger-aero",
+      "file": "frutiger-aero.capri-skin",
+      "name": "Frutiger Aero",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "Capri in the glossy mid-2000s look of Windows Vista and 7, all inside her own outline: water-glass blue hair full of rising bubbles, orange gel panels, gel-gloss shards, black-glass limbs and twinkling lens flares."
+    },
+    {
+      "folder": "hair-down",
+      "file": "hair-down.capri-skin",
+      "name": "Hair Down",
+      "kind": "skin",
+      "author": "Vocyn",
+      "about": "Capri with her hair let down: one sleek hot-pink sheet with a neon glow, falling down her back to a hooked point, with a thin strand in front of her face."
+    },
+    {
       "folder": "hearing-log",
       "file": "hearing-log.capri-mod",
       "name": "Hearing Log",
@@ -56,6 +80,14 @@
       "kind": "code",
       "author": "Vocyn",
       "about": "A tiny code mod to learn from. Say \"mod check\" and she answers and counts how many times you've asked."
+    },
+    {
+      "folder": "nicknames",
+      "file": "nicknames.capri-code",
+      "name": "Nicknames",
+      "kind": "code",
+      "author": "Vocyn",
+      "about": "Give Capri new names just by asking, out loud or in chat. She answers to them straight away and remembers them."
     },
     {
       "folder": "sharper-ears",
