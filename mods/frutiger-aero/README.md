@@ -9,4 +9,4 @@ Her shapes and animations are exactly her own, only restyled, and nothing is dra
 
 Built from Capri's art, so it's under the same PolyForm Noncommercial License 1.0.0: free to share, not to sell. Capri's art and animations are by her artist.
 
-New in 3.3.0: she stands in her new 0.8.6 loop in this skin, facing either way, with its blink. Needs Capri 0.8.6 or later.
+New in 3.3.0: she stands in her new 0.8.6 loop in this skin, facing either way, with its blink, and keeps its old stand for Legacy stand in Settings. Needs Capri 0.8.6 or later.
