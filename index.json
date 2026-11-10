@@ -482,6 +482,14 @@
       "about": "Adds more emojis to use in Mirit0's Caprichat"
     },
     {
+      "folder": "music-deck",
+      "file": "music-deck.capri-code",
+      "name": "Music Deck",
+      "kind": "code",
+      "author": "Vocyn",
+      "about": "Swaps her mini player for a glass music deck that takes its colours from the song's cover, with a live visualizer, synced lyrics, history, app switching, a spinning mini disc, a sleep timer, volume and hotkeys."
+    },
+    {
       "folder": "mute-button",
       "file": "mute-button.capri-code",
       "name": "Mute Button",
