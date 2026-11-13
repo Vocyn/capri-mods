@@ -210,7 +210,7 @@ public sealed class DeckWindow : Form
         StartPosition = FormStartPosition.Manual;
         TopMost = true;
         Text = "Music Deck";
-        ticker.Interval = 16;
+        ticker.Interval = 33;
         ticker.Tick += delegate { Frame(); };
     }
 
@@ -381,7 +381,9 @@ public sealed class DeckWindow : Form
         string cache = host.Folder;
         ThreadPool.QueueUserWorkItem(delegate
         {
-            LyricSet found = LyricFinder.Find(title, artist, album, length, cache);
+            LyricSet found;
+            try { found = LyricFinder.Find(title, artist, album, length, cache); }
+            catch (Exception) { found = new LyricSet { Status = "No lyrics for this one." }; }
             try
             {
                 Form window = host.Ui.Window;
@@ -567,7 +569,7 @@ public sealed class DeckWindow : Form
             ticker.Interval = 250;
             return;
         }
-        ticker.Interval = 16;
+        ticker.Interval = 33;
         if (track != null && ShownArt() == null && art != null && artKey != track.Key) { accentGoal = Pink; accent2Goal = Cyan; }
         accent = Blend(accent, accentGoal, (float)Math.Min(1, step * 4));
         accent2 = Blend(accent2, accent2Goal, (float)Math.Min(1, step * 4));
@@ -2137,7 +2139,12 @@ public static class LyricFinder
             string cacheFolder = Path.Combine(folder, "lyrics-2");
             Directory.CreateDirectory(cacheFolder);
             cacheFile = Path.Combine(cacheFolder, Short(cleanArtist.ToLowerInvariant() + "\n" + cleanTitle.ToLowerInvariant()) + ".txt");
-            if (File.Exists(cacheFile)) return Parse(File.ReadAllText(cacheFile, Encoding.UTF8));
+            if (File.Exists(cacheFile))
+            {
+                string cached = File.ReadAllText(cacheFile, Encoding.UTF8);
+                try { return Parse(cached); }
+                catch (Exception) { File.Delete(cacheFile); }
+            }
         }
         catch (Exception) { cacheFile = null; }
         if (cleanTitle.Length == 0) return new LyricSet { Status = "No lyrics for this one." };
@@ -2161,8 +2168,9 @@ public static class LyricFinder
         catch (Exception) { }
         if (found == null && !reached) return new LyricSet { Status = "Couldn't reach lrclib.net for lyrics." };
         string saved = found ?? "[none]";
+        LyricSet set = Parse(saved);
         try { if (cacheFile != null) File.WriteAllText(cacheFile, saved, Encoding.UTF8); } catch (Exception) { }
-        return Parse(saved);
+        return set;
     }
 
     // lrclib's search, best match first: synced ones, then the closest length. Strict keeps to within 15 seconds of this length.
